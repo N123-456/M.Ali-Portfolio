@@ -1,0 +1,23 @@
+.footer {
+    padding: 2rem;
+    background-color: #0b0c10;
+    color: white;
+    text-align: center;
+  
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0 15px;
+    color: #66fcf1;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  

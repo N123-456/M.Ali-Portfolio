@@ -1,0 +1,30 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }}
+  .contact-section {
+    animation: fadeIn 1.5s ease-in-out;
+      padding: 4rem 2rem;
+      background-color: #0b0c10;
+      color: white;
+      text-align: center;
+    
+    }
+    
+    .contact-section a {
+      color: #66fcf1;
+      text-decoration: none;
+    }
+    
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+    p{
+      font-size: 20px;
+    }
+    
