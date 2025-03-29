@@ -7,6 +7,9 @@ import ContactUs from "../Pages/ContactUs";
 import { Link } from "react-router-dom";
 import "./css/Navbar.css";
 const Navbar = () => {
+  const scrollToFooter = () => {
+    document.querySelector("footer").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
        <header className="header">
@@ -17,7 +20,7 @@ const Navbar = () => {
         <Link to="/skills" className="nav-link">Skills</Link>
         <Link to="/experience" className="nav-link">Experience</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
-        <Link to="/contact" className="nav-link">Contact</Link>
+        <span onClick={scrollToFooter} className="nav-link">Contact</span>
         </nav>
       </header>
     </div>
