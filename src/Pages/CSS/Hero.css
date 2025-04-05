@@ -1,9 +1,10 @@
 .typing-text {
-    font-size: 1.5rem;
+    font-size: 30px;
     color: var(--secondary-color);
     font-weight: bold;
     border-right: 3px solid white;
     animation: blink 0.8s infinite;
+  
   }
   @keyframes fadeIn {
     from {
@@ -22,14 +23,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
+  
+    
       background: #1f2833;
       color: white;
     }
     
     .hero h2 {
       font-size: 3rem;
+      margin-bottom: 10px; /* Add spacing below heading */
     }
     
     .cta-button {
@@ -44,9 +46,69 @@
     .cta-button:hover {
       background-color: #66fcf1;
     }
+    .image-section {
+      max-width: 350px;
+      max-height: 350px;
+      margin-bottom: 5px;
+      padding-right: 200px;
+      
+    }
+    .hero-image {
+      width: 80%;
+      height: 80%;
+      border-radius: 70%;
+      object-fit: cover;
+      border: 3px solid white;
+    
+    }
+    .hero-content {
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      justify-content: space-between;
+      /* gap: 40px; */
+      flex-wrap: wrap;
+    }
+    .text-section {
+      max-width: 350px;
+      max-height: 350px;
+      /* /* display: flex;
+  flex-direction: column;
+  gap: 20px; */
+  padding-left: 200px;
+    }
+  
+    
     @keyframes blink {
       50% {
         border-color: transparent;
       }
+    }
+    .education-section {
+      margin-top: 40px;
+      background-color: #2b313c;
+      border-left: 4px solid #45a29e;
+      border-radius: 8px;
+      animation: fadeIn 1.2s ease-in-out;
+      color: white;
+      height: 300px;
+      width: 500px;
+    }
+    
+    .education-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #66fcf1;
+    }
+    
+    .education-section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+    
+    .education-section li {
+      margin-bottom: 10px;
+      color: #ddd;
     }
     

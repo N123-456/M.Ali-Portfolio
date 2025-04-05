@@ -20,6 +20,25 @@ const projects = [
     description:
       "Managed MSSP program, optimizing service delivery and performance monitoring.",
   },
+  {
+    title: "Cryptosim & Unitmon Implementation",
+    company: "Pakistan Navy",
+    description:
+      "Deployed secure communication and system monitoring tools for critical defense infrastructure.",
+  },
+  {
+    title: "Kaspersky Total Endpoint Security Deployment",
+    company: "NADRA",
+    description:
+      "Implemented endpoint security across air-gapped systems to enhance malware protection and policy control..",
+  },
+  {
+    title: "Web Filtering & SandVine Solution Deployment",
+    company: "SCO",
+    description:
+      "Integrated SandVine for network-wide web filtering, bandwidth control, and content security.",
+  },
+  
 ];
 const Projects = () => {
   useScrollAnimation();

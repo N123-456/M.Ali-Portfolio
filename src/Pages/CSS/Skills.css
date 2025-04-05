@@ -15,7 +15,7 @@
       color: white;
       text-align: center;
       min-height: 100vh;
-      font-size: 30px;
+      font-size: 20px;
     }
     
     .skills-grid {
@@ -30,9 +30,13 @@
       background: #45a29e;
       border-radius: 8px;
       transition: transform 0.3s;
+      font-size: 25px;
   }
   
   .skill-item:hover {
     transform: scale(1.1);
   }
-    
+  .skill-item ul li {
+    font-size: 25px;
+  }
+  
