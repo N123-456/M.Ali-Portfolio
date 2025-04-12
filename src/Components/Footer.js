@@ -1,29 +1,31 @@
-import React from 'react'
-import './css/Footer.css';
-import { FaEnvelope,FaLinkedin,FaPhone } from 'react-icons/fa';
+import React from "react";
+import "./css/Footer.css";
+import { FaEnvelope, FaLinkedin, FaPhoneAlt,FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-       <footer className="footer">
-      
-       <div className="footer-content">
-        <h2>Get in Touch</h2>
-        <div className="contact-info">
-          <p><FaEnvelope /> <a href="mailto:malihaque@gmail.com">malihaque@gmail.com</a></p>
-          <p><FaLinkedin /> <a href="https://linkedin.com/in/ahaq" target="_blank" rel="noopener noreferrer">linkedin.com/in/ahaq</a></p>
-          <p><FaPhone /> +92 332 520 9822</p>
+     
+     <footer className="footer">
+      <div className="footer-content">
+        <p>© 2025 Ali Haq. All rights reserved.</p>
+        <div className="social-icons">
+          <a href="https://linkedin.com/in/alihaq" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />Linkedin
+          </a>
+          <a href="https://github.com/alihaq" target="_blank" rel="noopener noreferrer">
+            <FaGithub />Github
+          </a>
+          <a href="mailto:ali@example.com">
+            <FaEnvelope />malihaque@gmail.com
+          </a>
+          <a href="tel:+1234567890">
+            <FaPhoneAlt />Phone
+          </a>
         </div>
-        <div className="footer-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-        </div>
-        <p className="footer-note">&copy; {new Date().getFullYear()} Ali Haq. All rights reserved.</p>
       </div>
-    </footer> 
+    </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

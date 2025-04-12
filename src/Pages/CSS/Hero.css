@@ -1,10 +1,9 @@
-.typing-text {
-    font-size: 30px;
-    color: var(--secondary-color);
+
+  .typing-text {
+    font-size: 1.2rem;
+    color:white;
     font-weight: bold;
-    border-right: 3px solid white;
-    animation: blink 0.8s infinite;
-  
+    font-size: 20px;
   }
   @keyframes fadeIn {
     from {
@@ -17,16 +16,18 @@
     }
   }
   
-  .hero {
-    animation: fadeIn 1.5s ease-in-out;
-      height: 90vh;
+    .hero {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-  
-    
-      background: #1f2833;
-      color: white;
+      align-items: flex-start;
+      padding: 40px;
+      flex-wrap: wrap; /* Allows stacking on smaller screens */
+      /* background-color: #1f2833; */
+      background-image: url('/public/images/back.png');
+      animation: fadeIn 1.5s ease-in-out;
+    min-height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     
     .hero h2 {
@@ -34,48 +35,22 @@
       margin-bottom: 10px; /* Add spacing below heading */
     }
     
-    .cta-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #45a29e;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    .text-section {
+      position: relative;
+      z-index: 1; /* Ensure content stays on top of the background */
+      color: white; /* Ensure text is readable on dark background */
+      padding: 20px;
     }
     
-    .cta-button:hover {
-      background-color: #66fcf1;
-    }
-    .image-section {
-      max-width: 350px;
-      max-height: 350px;
-      margin-bottom: 5px;
-      padding-right: 200px;
-      
-    }
-    .hero-image {
-      width: 80%;
-      height: 80%;
-      border-radius: 70%;
-      object-fit: cover;
-      border: 3px solid white;
-    
-    }
+   
+   
     .hero-content {
       display: flex;
-      align-items: center;
-      /* justify-content: center; */
-      justify-content: space-between;
-      /* gap: 40px; */
+      flex-direction: row;
       flex-wrap: wrap;
-    }
-    .text-section {
-      max-width: 350px;
-      max-height: 350px;
-      /* /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
-  padding-left: 200px;
+      gap: 40px;
+      max-width: 1200px;
+      width: 100%;
     }
   
     
@@ -84,31 +59,10 @@
         border-color: transparent;
       }
     }
-    .education-section {
-      margin-top: 40px;
-      background-color: #2b313c;
-      border-left: 4px solid #45a29e;
-      border-radius: 8px;
-      animation: fadeIn 1.2s ease-in-out;
-      color: white;
-      height: 300px;
-      width: 500px;
-    }
     
-    .education-section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #66fcf1;
-    }
-    
-    .education-section ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      line-height: 1.6;
-    }
-    
-    .education-section li {
+    .text-section h2 {
+      font-size: 2rem;
       margin-bottom: 10px;
-      color: #ddd;
     }
+
     

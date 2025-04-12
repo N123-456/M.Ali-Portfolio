@@ -1,31 +1,45 @@
-import React from 'react';
-import './CSS/About.css';
-import useScrollAnimation from '../Hooks/useScrollAnimation';
+import React from "react";
+import "./CSS/About.css";
+import useScrollAnimation from "../Hooks/useScrollAnimation";
 const About = () => {
-    useScrollAnimation();
-    return (
-      
-      <section id="about" className="about-me hidden">
-        <div className="about-content">
-          <h1>About Me</h1>
-          <p>
-        I’m Ali Haq, a seasoned Cybersecurity Expert and DevOps Engineer with over 10 years of experience
-        in SOC operations, cloud security (AWS, DevSecOps), and compliance frameworks like SOC2.
-      </p>
-      <p>
-        My work spans leading SOC teams, implementing enterprise-grade security solutions, and helping
-        organizations achieve robust cloud and endpoint protection. I’m passionate about building scalable,
-        secure systems and continuously staying ahead of evolving threats.
-      </p>
-      <p>
-        Whether it’s deploying tools like SentinelOne and GuardDuty, leading MSSP programs, or driving
-        compliance audits — I thrive at the intersection of technology, security, and leadership.
-      </p>
-  
-          <a href="#contact" className="contact-btn">Let's Connect</a>
+  useScrollAnimation();
+  return (
+    <section id="about" className="about-section ">
+    <div className="section-color">
+      <div className="about-header">
+        <h1>LEARN MORE ABOUT ME</h1>
+      </div>
+      <div className="about-content">
+        <div className="about-image">
+          <img src='./images/ali.jpg' alt="Profile" />
         </div>
-      </section>
-    )
-}
+        <div className="about-text">
+          <h2>SOC Manager & Cloud Security Architect</h2>
+          <p>
+          I’m a results-driven cybersecurity executive with over 10 years of
+       experience in orchestrating security operations, service delivery,
+     and compliance. I specialize in SOC optimization, Zero Trust
+     Architecture, and cloud-native security solutions on AWS, Azure, and
+          GCP. I'm passionate about aligning security with business needs and
+          enabling organizations to reduce risk while maintaining agility.
+          </p>
 
-export default About
+          <div className="about-info">
+            <p><strong>Birthday:</strong> 9 December 1989</p>
+            <p><strong>Age:</strong> </p>
+            <p><strong>Website:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+            <p><strong>Degree:</strong>MS Information Security</p>
+            <p><strong>Phone:</strong> +92 332 520 9822</p>
+            <p><strong>Email:</strong> malihaque@gmail.com</p>
+            <p><strong>City:</strong> Karachi, Pakistan</p>
+            <p><strong>Freelance:</strong> Available</p>
+          
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

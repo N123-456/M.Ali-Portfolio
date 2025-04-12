@@ -8,85 +8,34 @@
       transform: translateY(0);
     }
   }
-  /* .experience-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    animation: fadeIn 1.5s ease-in-out;
-    background-color: #1f2833;
-  }
   
-  .experience-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #222;
-  }
-  
-  .job {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-  }
-  
-  .job:hover {
-    transform: translateY(-4px);
-  }
-  
-  .job h3 {
-    font-size: 1.25rem;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .job .period {
-    font-style: italic;
-    color: #777;
-    margin-bottom: 10px;
-  }
-  
-  .job ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #444;
-  }
-  
-  .job ul li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-  } */
-
   
   .experience-section {
     animation: fadeIn 1.5s ease-in-out;
       padding: 4rem 2rem;
       background-color: #1f2833;
       color: white;
+      background-image: url('/public/images/back1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      
     }
     
-    /* .experience-item {
-      margin-bottom: 30px;
-      padding: 20px;
-      border-left: 4px solid #45a29e;
-  
-    } */
     .experience-item {
       margin-bottom: 30px;
       padding: 20px;
       border-left: 4px solid #45a29e; 
       background: #45a29e;
       border-radius: 8px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s, box-shadow 0.3s ease;
       color: white;
       font-size: 25px;
     }
     
     .experience-item:hover {
       /* transform: translateY(-5px); */
-      transform: scale(1.05) rotateX(5deg) rotateY(5deg);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
     
       

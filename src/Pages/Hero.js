@@ -39,17 +39,7 @@ const Hero = () => {
         </div>
         
 
-        <div className="image-section">
-          <img src="/images/ali.jpg" alt="Ali Haq" className="hero-image" />
-        </div>
-        
-        <div className="education-section">
-          <h3>Education</h3>
-  <ul>
-    <li><strong>Master’s in Information Security</strong><br />Riphah International University | 2017 – 2019</li>
-    <li><strong>Bachelor’s in Software Engineering</strong><br />Riphah International University | 2012 – 2016</li>
-  </ul>
-  </div>
+       
 
       </div>
     </section>

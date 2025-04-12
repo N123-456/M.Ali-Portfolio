@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link to="/skills" className="nav-link">Skills</Link>
         <Link to="/experience" className="nav-link">Experience</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
-        <span onClick={scrollToFooter} className="nav-link">Contact</span>
+       
         </nav>
       </header>
     </div>
