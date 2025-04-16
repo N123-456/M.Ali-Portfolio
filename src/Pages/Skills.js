@@ -35,7 +35,7 @@ const Skills = () => {
             <div key={index} className="skill-item">{item}</div>
           ))}
         </div>
-        <h1 style={{ marginTop: "100px" }}>Certifications</h1>
+        <h1 style={{ marginTop: "90px" }}>Certifications</h1>
       <div className="skills-grid">
         {certifications.map((cert, index) => (
           <div key={index} className="skill-item">{cert}</div>

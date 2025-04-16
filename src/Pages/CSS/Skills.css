@@ -18,13 +18,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    font-family: 'Poppins', sans-serif;
   }
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex: 1 1 calc(50% - 1rem); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   
   .skill-item {
@@ -38,4 +40,11 @@
   .skill-item:hover {
     transform: scale(1.1);
   }
-  
+  @media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills on smaller screens */
+    }
+
+    .skill-item {
+        font-size: 18px;
+    }}

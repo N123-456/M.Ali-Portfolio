@@ -20,18 +20,18 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 40px;
+      padding: 4rem 2rem;
       flex-wrap: wrap; /* Allows stacking on smaller screens */
-      /* background-color: #1f2833; */
       background-image: url('/public/images/back.png');
       animation: fadeIn 1.5s ease-in-out;
     min-height: 100vh;
       background-size: cover;
       background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
     }
     
-    .hero h2 {
-      font-size: 3rem;
+    .text-section h2 {
+      font-size: 2rem;
       margin-bottom: 10px; /* Add spacing below heading */
     }
     
@@ -40,13 +40,16 @@
       z-index: 1; /* Ensure content stays on top of the background */
       color: white; /* Ensure text is readable on dark background */
       padding: 20px;
+      
     }
     
    
    
     .hero-content {
       display: flex;
-      flex-direction: row;
+      flex-direction: row; 
+    flex: 1 1 100%;
+      /* flex-direction: column; */
       flex-wrap: wrap;
       gap: 40px;
       max-width: 1200px;
@@ -64,5 +67,12 @@
       font-size: 2rem;
       margin-bottom: 10px;
     }
+    @media (max-width: 600px) {
+      .hero {
+          justify-content: space-between;
+      }
+  
+      .hero-content {
+         text-align: left;}}
 
     

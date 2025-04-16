@@ -18,18 +18,20 @@
       background-image: url('/public/images/back1.png');
       background-size: cover;
       background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
       
     }
     
     .experience-item {
       margin-bottom: 30px;
+      margin-top: 70px;
       padding: 20px;
       border-left: 4px solid #45a29e; 
       background: #45a29e;
       border-radius: 8px;
       transition: transform 0.3s, box-shadow 0.3s ease;
       color: white;
-      font-size: 25px;
+      font-size: 1.5rem;
     }
     
     .experience-item:hover {
@@ -63,4 +65,16 @@
       color:white;
       margin-bottom: 8px;
     }
-    
+    @media (max-width: 600px) {
+      .experience-item {
+          text-align: left;
+      
+      }
+  
+      .experience-item h3 {
+          font-size: 1.5rem;
+      }
+  
+      .experience-item li {
+          font-size: 1rem;
+      }}

@@ -1,115 +1,145 @@
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  /* General section styling */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section container */
 .about-section {
-  
   background-image: url('/public/images/back1.png');
-  color: white;
-  padding: 40px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center; /* Center all the content */
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  /* padding: 4rem 1rem; */
+  padding: 40px 20px;
+  font-family: 'Poppins';
+  text-align: center;
+  width:100%;
+  animation: fadeIn 1.5s ease-in-out;
+  min-height: 100vh;         /* Full viewport height */
+  overflow-x: hidden;
+  margin: 0;
+  position: relative;
+  left: 0;
+  right: 0;
 }
-.section-color{
+
+.section-color {
   background-color: #45a29e;
   margin-top: 70px;
-  
+  padding: 2rem 1rem;
 }
+
+/* Header */
 .about-header h1 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  border-bottom: 2px solid green;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid black;
   display: inline-block;
 }
 
+/* Main flexbox layout */
 .about-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
   align-items: flex-start;
-  gap: 30px;
-  margin-top: 40px;
-  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
-
+.about-image {
+  
+  display: flex;
+  justify-content: flex-start;
+}
+/* Image styling */
 .about-image img {
-
-  width: 250px; /* Increased image size */
-  height: 250px; /* Height equal to width for a perfect circle */
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Enhanced shadow */
-  object-fit: cover; /* Ensures the image fits without distortion */
-  margin-bottom: 20px; /* Space between image and text */
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  /* margin-bottom: 1rem; */
+  margin: 0 auto;
 }
 
+/* Text area */
 .about-text {
   max-width: 700px;
-  width: 100%;
-  text-align: left; /* Align text to the left for readability */
+  text-align: left;
 }
 
+/* Title in about */
 .about-text h2 {
-  color: #00ff88;
-  font-size: 24px;
-  margin-bottom: 15px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Paragraph styling */
 .about-text p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
+/* Info section */
 .about-info {
-  margin: 20px 0;
-  text-align: left; /* Align details to the left */
+  margin-top: 1.5rem;
 }
 
+/* Details */
 .about-info p {
-  margin: 5px 0;
+  margin: 0.3rem 0;
 }
 
+/* Links */
 .about-info a {
   color: #00ff88;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s ease-in-out;
 }
 
 .about-info a:hover {
   color: #ffcc00;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
+ 
   .about-content {
-    flex-direction: column;
-    text-align: center; /* Center text and image on smaller screens */
-  }
-
-  .about-image img {
-   
-    width: 200px; /* Slightly smaller image on smaller screens */
-    height: 200px;
+    /* flex-direction: column;
+    align-items: center;
+    text-align: center; */
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  align-items: flex-start;
   }
 
   .about-text {
-    max-width: 90%;
+    /* max-width: 90%;
+    text-align: center; */
+    max-width: 700px;
+    text-align: left;
   }
 
   .about-info {
-    text-align: center;
+    /* text-align: center; */
+    margin-top: 1.5rem;
+  }
+  .about-info p {
+    margin: 0.3rem 0;
+  }
+  .about-image {
+    justify-content: center; /* Center on smaller screens */
   }
 }
-
-  
-  
-  

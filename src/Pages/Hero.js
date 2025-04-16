@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from 'react';
-import { useEffect } from 'react';
-import './CSS/Hero.css';
+import { useState } from "react";
+import { useEffect } from "react";
+import "./CSS/Hero.css";
 const Hero = () => {
   const texts = [
     "Cybersecurity Leader",
@@ -29,21 +29,14 @@ const Hero = () => {
   }, [charIndex, index]);
   return (
     <div>
-     
-      <section className="hero">
-      <div className="hero-content">
-        <div className="text-section">
-          <h2>Hello, I'm Ali Haq</h2>
-          <p className="typing-text">{text}</p>
-          
+      <section className="hero p-5">
+        <div className="hero-content">
+          <div className="text-section">
+            <h2 className="display-4">Hello, I'm Ali Haq</h2>
+            <p className="lead">{text}</p>
+          </div>
         </div>
-        
-
-       
-
-      </div>
-    </section>
-
+      </section>
     </div>
   );
 };

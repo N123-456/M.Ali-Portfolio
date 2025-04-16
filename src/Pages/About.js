@@ -4,7 +4,7 @@ import useScrollAnimation from "../Hooks/useScrollAnimation";
 const About = () => {
   useScrollAnimation();
   return (
-    <section id="about" className="about-section ">
+    <section id="about" className="about-section">
     <div className="section-color">
       <div className="about-header">
         <h1>LEARN MORE ABOUT ME</h1>
@@ -38,6 +38,7 @@ const About = () => {
       </div>
       </div>
       </div>
+      
     </section>
   );
 };

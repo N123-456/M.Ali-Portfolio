@@ -17,6 +17,7 @@
       background-image: url('/public/images/back1.png');
       background-size: cover;
       background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
     }
     
     .projects-grid {
@@ -24,7 +25,7 @@
       /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
       grid-template-columns: repeat(2, 1fr); 
       gap: 20px;
-      margin-top: 100px;
+      margin-top: 70px;
   
     }
     
@@ -35,6 +36,7 @@
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       transform-style: preserve-3d;
+      font-size: 1rem;
   }
   
   .project-card:hover {
@@ -45,4 +47,11 @@
     font-size: 3rem;
     font-weight: bold;
   }
-    
+  @media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects on smaller screens */
+    }
+
+    .project-card {
+        font-size: 18px;
+    }}
