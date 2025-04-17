@@ -12,9 +12,21 @@ const skills = [
 
 // Flatten tools into a single array
 const tools = [
-  "Wazuh", "ELK Stack", "Splunk", "QRadar", "Sumo Logic", "MISP",
-  "AWS GuardDuty", "Prisma Cloud", "Kubernetes", "Ansible", "Docker",
-  "SentinelOne", "Cisco AMP", "Kaspersky", "Microsoft Defender ATP"
+  "Wazuh",
+  "ELK Stack",
+  "Splunk",
+  "QRadar",
+  "Sumo Logic",
+  "MISP",
+  "AWS GuardDuty",
+  "Prisma Cloud",
+  "Kubernetes",
+  "Ansible",
+  "Docker",
+  "SentinelOne",
+  "Cisco AMP",
+  "Kaspersky",
+  "Microsoft Defender ATP",
 ];
 
 const certifications = [
@@ -32,20 +44,21 @@ const Skills = () => {
         <h1>Skills & Tools</h1>
         <div className="skills-grid">
           {[...skills, ...tools].map((item, index) => (
-            <div key={index} className="skill-item">{item}</div>
+            <div key={index} className="skill-item">
+              {item}
+            </div>
           ))}
         </div>
         <h1 style={{ marginTop: "90px" }}>Certifications</h1>
-      <div className="skills-grid">
-        {certifications.map((cert, index) => (
-          <div key={index} className="skill-item">{cert}</div>
-        ))}
-      </div>
+        <div className="skills-grid">
+          {certifications.map((cert, index) => (
+            <div key={index} className="skill-item">
+              {cert}
+            </div>
+          ))}
+        </div>
       </section>
-
-      
     </div>
-    
   );
 };
 

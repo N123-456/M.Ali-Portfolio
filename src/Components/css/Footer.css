@@ -16,6 +16,7 @@
   text-align: center;
   animation: fadeIn 0.8s ease-in-out;
   font-family: 'Poppins', sans-serif;
+
 }
 
 .footer-content {
@@ -33,7 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 6rem;
 }
 
 .social-icons a {
@@ -51,3 +52,25 @@
   color: #66fcf1;
   transform: scale(1.15);
 }
+@media screen and (max-width: 768px) {
+  .footer-content {
+    padding: 0 1rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;              /* Allows wrapping if needed */
+    justify-content: center;
+    gap: 1rem;                    /* Slightly reduced gap for mobile */
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+    white-space: nowrap;         /* Keeps icons + text on one line */
+  }
+
+  .footer p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+

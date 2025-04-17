@@ -13,11 +13,8 @@
   .experience-section {
     animation: fadeIn 1.5s ease-in-out;
       padding: 4rem 2rem;
-      background-color: #1f2833;
       color: white;
-      background-image: url('/public/images/back1.png');
-      background-size: cover;
-      background-repeat: no-repeat;
+     
       font-family: 'Poppins', sans-serif;
       
     }

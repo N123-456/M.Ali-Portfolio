@@ -11,22 +11,17 @@
 
 /* Section container */
 .about-section {
-  background-image: url('/public/images/back1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  
+
   color: white;
   /* padding: 4rem 1rem; */
   padding: 40px 20px;
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
   text-align: center;
-  width:100%;
   animation: fadeIn 1.5s ease-in-out;
-  min-height: 100vh;         /* Full viewport height */
-  overflow-x: hidden;
-  margin: 0;
-  position: relative;
-  left: 0;
-  right: 0;
+        /* Full viewport height */
+ 
+ 
 }
 
 .section-color {
