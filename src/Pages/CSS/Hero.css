@@ -1,10 +1,6 @@
 
-  .typing-text {
-    font-size: 1.2rem;
-    color:white;
-    font-weight: bold;
-    font-size: 20px;
-  }
+ 
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -17,29 +13,34 @@
   }
   
     .hero {
-      display: flex;
+       display: flex;
       justify-content: center;
       align-items: flex-start;
       padding: 4rem 2rem;
-      flex-wrap: wrap; /* Allows stacking on smaller screens */
-      background-image: url('/public/images/back.png');
+      flex-wrap: wrap;  
+       background-color: #334155 !important;
       animation: fadeIn 1.5s ease-in-out;
-    min-height: 100vh;
-      background-size: cover;
-      background-repeat: no-repeat;
+      min-height: 100vh;
+      width: 100%; 
       font-family: 'Poppins', sans-serif;
+      
     }
+    
     
     .text-section h2 {
       font-size: 2rem;
-      margin-bottom: 10px; /* Add spacing below heading */
+      margin-bottom: 10px;  
+      
+      
     }
     
     .text-section {
       position: relative;
-      z-index: 1; /* Ensure content stays on top of the background */
-      color: white; /* Ensure text is readable on dark background */
+      z-index: 1; 
+      color: white; 
       padding: 20px;
+      align-items: center;
+      
       
     }
     
@@ -47,13 +48,13 @@
    
     .hero-content {
       display: flex;
-      flex-direction: row; 
-    flex: 1 1 100%;
-      /* flex-direction: column; */
+      /* flex-direction: row;   */
+  
       flex-wrap: wrap;
       gap: 40px;
-      max-width: 1200px;
-      width: 100%;
+      margin-top: 0;
+      margin-bottom: 70px;
+      
     }
   
     

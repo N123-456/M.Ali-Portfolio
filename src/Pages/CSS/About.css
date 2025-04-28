@@ -9,37 +9,39 @@
   }
 }
 
-/* Section container */
+
 .about-section {
   
 
   color: white;
-  /* padding: 4rem 1rem; */
-  padding: 40px 20px;
+ 
+  padding: 4rem 2rem;
   font-family: 'Poppins',sans-serif;
   text-align: center;
   animation: fadeIn 1.5s ease-in-out;
-        /* Full viewport height */
+  background-color:  #0f172a !important;
+  width: 100% !important;  /* Changed to 100% to avoid potential viewport issues */
+  
  
  
 }
 
 .section-color {
-  background-color: #45a29e;
-  margin-top: 70px;
-  padding: 2rem 1rem;
+  
+  margin-top: 10px;
+  /* padding: 2rem 1rem; */
 }
 
-/* Header */
 .about-header h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
   border-bottom: 2px solid black;
   display: inline-block;
+  
+  
+   
 }
 
-/* Main flexbox layout */
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -53,18 +55,16 @@
   display: flex;
   justify-content: flex-start;
 }
-/* Image styling */
+
 .about-image img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-  /* margin-bottom: 1rem; */
   margin: 0 auto;
 }
 
-/* Text area */
 .about-text {
   max-width: 700px;
   text-align: left;
@@ -94,24 +94,10 @@
   margin: 0.3rem 0;
 }
 
-/* Links */
-.about-info a {
-  color: #00ff88;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.about-info a:hover {
-  color: #ffcc00;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
  
   .about-content {
-    /* flex-direction: column;
-    align-items: center;
-    text-align: center; */
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -119,22 +105,24 @@
   margin-top: 2.5rem;
   align-items: flex-start;
   }
+  .about-header h1{
+    font-size: 1.5rem;
+  }
 
   .about-text {
-    /* max-width: 90%;
-    text-align: center; */
+  
     max-width: 700px;
     text-align: left;
   }
 
   .about-info {
-    /* text-align: center; */
+    
     margin-top: 1.5rem;
   }
   .about-info p {
     margin: 0.3rem 0;
   }
   .about-image {
-    justify-content: center; /* Center on smaller screens */
+    justify-content: center;
   }
 }

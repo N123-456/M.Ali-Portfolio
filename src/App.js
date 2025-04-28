@@ -15,17 +15,17 @@ function App() {
   return (
     <div className="App">
        <Navbar />
-       <div className="container">
-      <Routes>
+      
+      {/* <Routes>
       <Route path="/" element={  <Hero/>} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />} /> */}
         
-      </Routes>
-      </div>
-      <Footer/>
+      {/* </Routes> */} */
+<Hero/>
+   <Footer/>
     </div>
   );
 }

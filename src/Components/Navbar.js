@@ -18,6 +18,16 @@ const Navbar = () => {
     <div>
       <header className="header">
         <h1 className="logo">Ali Haq</h1>
+        <button
+          className="hamburger"
+          type="button"
+          onClick={toggleMenu}
+          aria-controls="navbarNav"
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation"
+        >
+         &#9776; 
+        </button>
           <nav className={`nav ${isMenuOpen ? "open" : ""}`} id='navbarNav'>
             <Link to="/" className="nav-link">
               Home
@@ -35,20 +45,10 @@ const Navbar = () => {
               Projects
             </Link>
           </nav>
-          {/* <div className="hamburger" onClick={toggleMenu}>
-        &#9776; {/* Hamburger icon */}
-      {/* </div> } */}
-          <button
-          className="hamburger"
-          type="button"
-          onClick={toggleMenu}
-          aria-controls="navbarNav"
-          aria-expanded={isMenuOpen}
-          aria-label="Toggle navigation"
-        >
-       &#9776;
-        </button>
+          
+        
       </header>
+     
     </div>
   );
 };

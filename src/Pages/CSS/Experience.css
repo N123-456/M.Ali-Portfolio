@@ -14,8 +14,12 @@
     animation: fadeIn 1.5s ease-in-out;
       padding: 4rem 2rem;
       color: white;
-     
+     background-color: #0f172a;
       font-family: 'Poppins', sans-serif;
+      margin-top: 5rem;
+      width: 100% !important;
+    
+     
       
     }
     
@@ -23,12 +27,14 @@
       margin-bottom: 30px;
       margin-top: 70px;
       padding: 20px;
-      border-left: 4px solid #45a29e; 
-      background: #45a29e;
+      /* border-left: 4px solid #45a29e;  */
+      /* background: #45a29e; */
+      background: white;
       border-radius: 8px;
       transition: transform 0.3s, box-shadow 0.3s ease;
-      color: white;
+      color: black;
       font-size: 1.5rem;
+      
     }
     
     .experience-item:hover {
@@ -58,11 +64,17 @@
     }
     
     .experience-item li {
-      list-style-type: disc;
-      color:white;
+      list-style-type: none;
+      color: black;
       margin-bottom: 8px;
+      text-align: left;
     }
     @media (max-width: 600px) {
+      /* .experience-section{
+        padding: 2rem 0;
+        
+        
+      } */
       .experience-item {
           text-align: left;
       
