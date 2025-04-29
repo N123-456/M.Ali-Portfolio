@@ -16,8 +16,12 @@
     font-family: 'Poppins', sans-serif;
     background-color:  #0f172a;
     margin-top: 5rem;
-    width: 100% !important;
+    width: 90vw !important;
 
+  }
+  .skills-section h1{
+    user-select: none;    /* Prevents text selection */
+  cursor: default;
   }
   
   .skills-grid {
@@ -37,13 +41,18 @@
     border-radius: 8px;
     transition: transform 0.3s;
     font-size: 25px;
+    user-select: none;    /* Prevents text selection */
+    cursor: default;
   }
   
   .skill-item:hover {
     transform: scale(1.1);
   }
   @media (max-width: 600px) {
-   
+   .skills-section{
+    width: 100% !important;
+
+   }
     .skills-grid {
         grid-template-columns: 1fr; /* Stack skills on smaller screens */
     }

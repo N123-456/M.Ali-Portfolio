@@ -1,7 +1,5 @@
 
- 
-
-  @keyframes fadeIn {
+ @keyframes fadeIn {
     from {
       opacity: 0;
       transform: translateY(-20px);
@@ -28,8 +26,16 @@
     
     
     .text-section h2 {
-      font-size: 2rem;
+      font-size: 3rem;
       margin-bottom: 10px;  
+      user-select: none;    /* Prevents text selection */
+  cursor: default;
+      
+    }
+    .text-section p {
+      font-size: 2rem;
+      user-select: none;    /* Prevents text selection */
+      cursor: default;
       
       
     }
@@ -52,8 +58,8 @@
   
       flex-wrap: wrap;
       gap: 40px;
-      margin-top: 0;
-      margin-bottom: 70px;
+      margin-top: 0.1rem;
+      
       
     }
   
@@ -63,17 +69,32 @@
         border-color: transparent;
       }
     }
-    
-    .text-section h2 {
+ 
+    .text-section p {
       font-size: 2rem;
-      margin-bottom: 10px;
+    
+      
+   
     }
     @media (max-width: 600px) {
+      .text-section p {
+        font-size: 1.4rem;
+      
+        
+     
+      }
+      .text-section h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;  
+        
+        
+      }
       .hero {
           justify-content: space-between;
       }
   
       .hero-content {
-         text-align: left;}}
+         text-align: left;
+        margin-top: 0.1rem;}}
 
     

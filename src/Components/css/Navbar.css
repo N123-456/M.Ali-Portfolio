@@ -17,6 +17,8 @@
   font-size: 1.8rem;
   font-weight: bold;
   white-space: nowrap;
+  user-select: none;    /* Prevents text selection */
+  cursor: default;
 }
 
 .header .nav {
@@ -39,7 +41,7 @@
 .hamburger {
   display: none; /* Hide by default */
   font-size: 2rem;
-  position: static !important; /* <-- keep it fixed at all times */
+  position: absolute !important;
   top: 3px;
   right: 10px;
   background: none;
@@ -80,6 +82,8 @@
   white-space: nowrap;
   flex-wrap: nowrap;
   scroll-padding-left: 0;
+  -ms-overflow-style: none;     /* IE and Edge */
+  scrollbar-width: none;   
   }
   /* show the hamburger */
   .hamburger {

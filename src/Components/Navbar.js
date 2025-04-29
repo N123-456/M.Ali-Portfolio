@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 import { Button } from "bootstrap";
 import { useState } from "react";
 import "./css/Navbar.css";
+import useScrollAnimation from "../Hooks/useScrollAnimation";
 const Navbar = () => {
+  useScrollAnimation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -29,21 +31,21 @@ const Navbar = () => {
          &#9776; 
         </button>
           <nav className={`nav ${isMenuOpen ? "open" : ""}`} id='navbarNav'>
-            <Link to="/" className="nav-link">
+            <a href="#/" className="nav-link">
               Home
-            </Link>
-            <Link to="/about" className="nav-link">
+            </a>
+            <a href="#about" className="nav-link">
               About
-            </Link>
-            <Link to="/skills" className="nav-link">
+            </a>
+            <a href="#skills" className="nav-link">
               Skills
-            </Link>
-            <Link to="/experience" className="nav-link">
+            </a>
+            <a href="#experience" className="nav-link">
               Experience
-            </Link>
-            <Link to="/projects" className="nav-link">
+            </a>
+            <a href="#projects" className="nav-link">
               Projects
-            </Link>
+            </a>
           </nav>
           
         

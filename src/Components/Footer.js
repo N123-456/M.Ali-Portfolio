@@ -31,7 +31,7 @@ const Footer = () => {
               Email
             </a>
 
-            <a href="tel:+1234567890">
+            <a href="tel: +92 332 520 9822">
               <FaPhoneAlt />
               Phone
             </a>

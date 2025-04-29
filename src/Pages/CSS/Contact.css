@@ -8,18 +8,21 @@
       transform: translateY(0);
     }}
     .contact-section {
+      animation: fadeIn 1.5s ease-in-out;
       background-color:  #0f172a !important;
-      
+      font-family: 'Poppins', sans-serif;
       margin-top: 5rem;
       padding: 4rem 2rem;
       color: white;
       text-align: center;
-      width: 100% !important;
+      width: 90vw !important;
     }
     
     .contact-section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
+      user-select: none;    /* Prevents text selection */
+  cursor: default;
     }
     
     .contact-form {
@@ -52,7 +55,7 @@
     }
     
     .contact-form button:hover {
-      background-color: #1e293b;
+      color: #66fcf1;;
     }
     
     .contact-icons {
@@ -72,6 +75,9 @@
     
     /* 🔽 RESPONSIVE STYLING */
     @media (max-width: 768px) {
+      .contact-section{
+        width: 100% !important;
+      }
       .contact-section h2 {
         font-size: 1.8rem;
       }

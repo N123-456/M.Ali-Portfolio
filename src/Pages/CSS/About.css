@@ -14,16 +14,13 @@
   
 
   color: white;
- 
   padding: 4rem 2rem;
   font-family: 'Poppins',sans-serif;
   text-align: center;
   animation: fadeIn 1.5s ease-in-out;
   background-color:  #0f172a !important;
-  width: 100% !important;  /* Changed to 100% to avoid potential viewport issues */
-  
- 
- 
+  width: 90vw !important;  
+margin-top: 2rem;
 }
 
 .section-color {
@@ -36,7 +33,9 @@
   font-size: 2rem;
   font-weight: bold;
   border-bottom: 2px solid black;
-  display: inline-block;
+  display: inline-block; 
+  user-select: none;    /* Prevents text selection */
+  cursor: default;
   
   
    
@@ -49,6 +48,8 @@
   gap: 2rem;
   margin-top: 2.5rem;
   align-items: flex-start;
+  user-select: none;    /* Prevents text selection */
+  cursor: default;
 }
 .about-image {
   
@@ -79,7 +80,7 @@
 
 /* Paragraph styling */
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 0.75rem;
 }
@@ -87,11 +88,13 @@
 /* Info section */
 .about-info {
   margin-top: 1.5rem;
+  
 }
 
 /* Details */
 .about-info p {
   margin: 0.3rem 0;
+  font-size: 1.5rem;
 }
 
 /* Responsive */

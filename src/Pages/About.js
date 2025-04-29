@@ -26,7 +26,7 @@ const About = () => {
 
           <div className="about-info">
             <p><strong>Birthday:</strong> 9 December 1989</p>
-            <p><strong>Age:</strong> </p>
+          
             {/* <p><strong>Website:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p> */}
             <p><strong>Degree:</strong>MS Information Security</p>
             <p><strong>Phone:</strong> +92 332 520 9822</p>

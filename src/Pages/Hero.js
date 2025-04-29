@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="text-section">
             <h2>Hello, I'm Ali Haq</h2>
-            <p> Cybersecurity Leader||SOC Manager||Cloud Security Expert</p>
+            <p>Cybersecurity Leader • SOC Manager • Cloud Security Expert</p>
           </div>
         </div>
         <About/>

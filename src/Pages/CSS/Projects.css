@@ -15,11 +15,13 @@
       
       font-family: 'Poppins', sans-serif;
       margin-top: 5rem;
-      width: 100% !important;
+      width: 90vw !important;
       background-color:  #0f172a;
     }
     .projects-section h1{
       color:white;
+      user-select: none;    /* Prevents text selection */
+  cursor: default;
     }
     
     .projects-grid {
@@ -41,6 +43,8 @@
       transform-style: preserve-3d;
       font-size: 1rem;
       text-align: left;
+      user-select: none;    /* Prevents text selection */
+  cursor: default;
   }
   
   .project-card:hover {
@@ -52,7 +56,9 @@
     font-weight: bold;
   }
   @media (max-width: 768px) {
-  
+  .projects-section{
+    width: 100% !important;
+  }
     .projects-grid {
         grid-template-columns: 1fr; /* Stack projects on smaller screens */
     }

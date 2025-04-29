@@ -44,7 +44,7 @@ const Projects = () => {
   useScrollAnimation();
   return (
     <div>
-      <section id="projects" className="projects-section hidden">
+      <section id="projects" className="projects-section">
         <h1>Projects</h1>
         <div className="projects-grid">
           {projects.map((project, index) => (
