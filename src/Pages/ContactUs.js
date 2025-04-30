@@ -9,7 +9,7 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_vi7pc4n', 'template_6z4rsdl', form.current, 'Q7CV5keZi4WQV0wBy')
+    emailjs.sendForm('service_4vz8wji', 'template_kfgp8hp', form.current, 'mVYjiZ9wL9M3SYZCY')
       .then((result) => {
         alert('Message sent successfully!');
         form.current.reset(); // Clears form
